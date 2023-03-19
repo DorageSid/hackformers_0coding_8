@@ -8,11 +8,13 @@
 	<div class="container mt-5">
 		<h1 class="text-center mb-5">GST Checker</h1>
 		<form method="POST" action="/process_image" enctype="multipart/form-data">
-			<div class="form-group">
+			<div class="text-center form-group >
 				<label for="gst_image">Upload an Image containing GST Number:</label>
 				<input type="file" name="image" accept="image/*" required>
 			</div>
-			<button type="submit" class="btn btn-primary mt-3">Check GST</button>
+			<div class="text-center">
+			<button  type="submit" class=" text-center  btn btn-primary mt-3 ">Check GST</button>
+		</div>
 		</form>
 	    {% if gst_result %}
 			{% if gst_result == "Invalid GST Number" %}
